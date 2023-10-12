@@ -21,3 +21,13 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+
+      - name: Commit and Push
+        # Keep the run green if the commit fails for the lack of changes
+        continue-on-error: True
+        run: |
+          git config user.email "h4y6@i.ua"
+          git config user.name "h4y6"
+          git add .
+          git commit -m "Deploy Production Code for Commit ${{ github.sha }} 🚀"
+          git push
