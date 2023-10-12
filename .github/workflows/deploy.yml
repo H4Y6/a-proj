@@ -28,6 +28,6 @@ jobs:
         run: |
           git config user.email "h4y6@i.ua"
           git config user.name "h4y6"
-          git add .
-          git commit -m "Deploy Production Code for Commit gh repo commit 🚀"
-          git push
+          git add gh repo add.
+          git commit -m "Deploy Production Code for Commit gh repo commit 🚀",
+          git push gh repo push
