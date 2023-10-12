@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
 
       - name: Install and Build 🔧
         run: |
@@ -17,7 +17,17 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
+
+      - name: Commit and Push
+        # Keep the run green if the commit fails for the lack of changes
+        continue-on-error: True
+        run: |
+          git config user.email "h4y6@i.ua"
+          git config user.name "h4y6"
+          git add gh repo add.
+          git commit -m "Deploy Production Code for Commit gh repo commit 🚀",
+          git push gh repo push
