@@ -1,1 +1,1 @@
-# ice-cream-team-proj
+# a-proj
