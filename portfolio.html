@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header--container">
+            <a href="./index.html" class="logo">Web<span class="logo__span">Studio</span></a>
+            <div class="mobile-menu js-menu-container" id="mobile-menu">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="./index.html" class="menu__link">Studio</a>
+                        </li>
+                        <li class="menu__item"><a href="./portfolio.html"
+                                class="menu__link  menu__link--active">Portfolio</a></li>
+                        <li class="menu__item"><a href="./contacts.html" class="menu__link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <ul class="contacts">
+                    <li class="contact__item"><a href="tel:+4203332211" class="contact__link contact__link--tel"><svg
+                                class="contact__icon-smartphone" width="10" height="14">
+                                <use href="./img/sprite.svg#icon-smartphone"></use>
+                            </svg>+420-333-22-11</a>
+                    </li>
+                    <li class="contact__item"><a href="mailto:info@devstudio.com"
+                            class="contact__link contact__link--email"><svg class="contact__icon-email" width="14"
+                                height="10">
+                                <use href="./img/sprite.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="soc-list">
+                    <li class="soc__item"><a href="Instagram" class="soc__link">Instagram</a></li>
+                    <li class="soc__item"><a href="Twitter" class="soc__link">Twitter</a></li>
+                    <li class="soc__item"><a href="Facebook" class="soc__link">Facebook</a></li>
+                    <li class="soc__item"><a href="LinkedIn" class="soc__link">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <button class="mobile-menu__button js-toggle-menu" aria-expanded="false" aria-controls="mobile-menu"
+                type="button">
+                <svg class="mobile-menu__icons" width="40" height="40">
+                    <use class="button__icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                    <use class="button__icon-close" href="./img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="visually-hidden">Portfolio</h1>
+                <ul class="button-list">
+                    <li><button class="portfolio__button" type="button">All</button> </li>
+                    <li><button class="portfolio__button" type="button">Web sites</button> </li>
+                    <li><button class="portfolio__button" type="button">Applications</button> </li>
+                    <li><button class="portfolio__button" type="button">Design</button> </li>
+                    <li><button class="portfolio__button" type="button">Marketing</button> </li>
+                </ul>
+
+                <ul class="portfolio__gallery">
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-1-d.jpg 1x, img/gallery/gallery-1-d@2x.jpg 2x">
+                                    <source media=" (min-width: 768px)"
+                                        srcset="img/gallery/gallery-1-t.jpg 1x, img/gallery/gallery-1-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-1-m.jpg 1x, img/gallery/gallery-1-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-1-m.jpg" alt="Three persons make the difference"
+                                        width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Technocrack</b><span
+                                    class="description__text">Website</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-2-d.jpg 1x, img/gallery/gallery-2-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-2-t.jpg 1x, img/gallery/gallery-2-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-2-m.jpg 1x, img/gallery/gallery-2-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-2-m.jpg" alt="Two basketball players and a ball"
+                                        width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">New Orlean vs Golden Star</b><span
+                                    class="description__text">Design</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-3-d.jpg 1x, img/gallery/gallery-3-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-3-t.jpg 1x, img/gallery/gallery-3-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-3-m.jpg 1x, img/gallery/gallery-3-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-3-m.jpg" alt="The seafood restaurant" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Restaurant Seafood</b><span
+                                    class="description__text">Application</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-4-d.jpg 1x, img/gallery/gallery-4-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-4-t.jpg 1x, img/gallery/gallery-4-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-4-m.jpg 1x, img/gallery/gallery-4-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-4-m.jpg" alt="Headphones" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Project Prime</b><span
+                                    class="description__text">Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-5-d.jpg 1x, img/gallery/gallery-5-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-5-t.jpg 1x, img/gallery/gallery-5-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-5-m.jpg 1x, img/gallery/gallery-5-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-5-m.jpg" alt="Two soap bars" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Project boxes</b><span
+                                    class="description__text">Application</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-6-d.jpg 1x, img/gallery/gallery-6-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-6-t.jpg 1x, img/gallery/gallery-6-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-6-m.jpg 1x, img/gallery/gallery-6-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-6-m.jpg" alt="A desktop" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Inspiration has no Borders</b><span
+                                    class="description__text">Website</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-7-d.jpg 1x, img/gallery/gallery-7-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-7-t.jpg 1x, img/gallery/gallery-7-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-7-m.jpg 1x, img/gallery/gallery-7-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-7-m.jpg" alt="The limited edition" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Limited Edition</b><span
+                                    class="description__text">Design</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-8-d.jpg 1x, img/gallery/gallery-8-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-8-t.jpg 1x, img/gallery/gallery-8-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-8-m.jpg 1x, img/gallery/gallery-8-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-8-m.jpg" alt="Label tag" width="450">
+                                </picture>
+                                <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                    Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Project LAB</b><span
+                                    class="description__text">Marketing</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="gallery__card"><a href="" class="gallery__link">
+                            <div class="card__img">
+                                <picture>
+                                    <source media="(min-width: 1200px)"
+                                        srcset="img/gallery/gallery-9-d.jpg 1x, img/gallery/gallery-9-d@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="img/gallery/gallery-9-t.jpg 1x, img/gallery/gallery-9-t@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="img/gallery/gallery-9-m.jpg 1x, img/gallery/gallery-9-m@2x.jpg 2x">
+                                    <img src="img/gallery/gallery-9-m.jpg" alt="A notebook" width="450">
+                                    <p class="card__overlay">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Laudantium aque dolorem cupiditate nihil repellat, nisi deleniti minus quod ad.
+                                        Error ad sapiente similique ex pariatur, enim tempora ipsam delenit.</p>
+                            </div>
+                            <div class="card__description">
+                                <b class="description__title">Growing Business</b><span
+                                    class="description__text">Application</span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__address">
+                <a href="" class="logo footer--logo">Web<span class="logo__span footer--logo__span">Studio</span></a>
+                <address>
+                    <p class="address__text">Common str., 7, EC-K0H London</p>
+                    <ul class="address-list">
+                        <li class="address__email">info@commonwealth.uk</li>
+                        <li>+44 22 7744 6611</li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__social">
+                <b class="footer__title">Join us</b>
+                <ul class="social-list footer__social-list">
+                    <li class="social__item footer-social__item"><a href="" class="social__link">
+                            <svg class="social__icon footer-social__icon">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+                    <li class="social__item footer-social__item"><a href="" class="social__link">
+                            <svg class="social__icon footer-social__icon">
+                                <use href="./img/sprite.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+                    <li class="social__item footer-social__item"><a href="" class="social__link">
+                            <svg class="social__icon footer-social__icon">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+                    <li class="social__item footer-social__item"><a href="" class="social__link">
+                            <svg class="social__icon footer-social__icon">
+                                <use href="./img/sprite.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>>
+            </div>
+
+            <div class="footer__form-part">
+                <b class="footer__title">Sign in for email</b>
+
+                <form class="footer__form" enctype="text/plain">
+                    <input class="form__input" type="email" name="email" id="email" placeholder="E-mail">
+                    <button class="button footer__button">Sign in <svg width="24" height="24">
+                            <use href="./img/sprite.svg#icon-send"></use>
+                        </svg></button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+
+</html>
